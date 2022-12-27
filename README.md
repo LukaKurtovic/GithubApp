@@ -17,6 +17,4 @@ Each implementation should contain following elements:
 
 This project contains android code for educational task Github App
 
-[Wiki](https://gitlab.com/dice-mobile/android/template-github-task/-/wikis/home)
-
 [Task PDF](/docs/task_github.pdf)
