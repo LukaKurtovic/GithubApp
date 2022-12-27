@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <string name="dialog_title">Confirm deletion</string>
+    <string name="dialog_message">You will delete search history</string>
+    <string name="history_deleted_message">Search history deleted</string>
+    <string name="owner">Owner:</string>
+    <string name="description">Description:</string>
+    <string name="opened_issues">Opened issues:</string>
+    <string name="watchers">Watchers:</string>
+    <string name="stars">Stars:</string>
+    <string name="is_private">Private:</string>
+    <string name="open_owner_repository">OPEN OWNER REPOSITORY</string>
+    <string name="open_owner_profile">OPEN OWNER PROFILE</string>
+    <string name="search">SEARCH</string>
+    <string name="search_hint">Search repositories…</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="yes_button">Yes</string>
+    <string name="private_no">NO</string>
+    <string name="private_yes">YES</string>
+    <string name="number_of_repositories">%1$s repositories found</string>
+    <string name="http_exception_error_message">Unexpected server response.</string>
+    <string name="IO_exception_error_message">Can\'t reach server. Check your internet connection.</string>
+    <string name="default_error_message">Unexpected error occurred!</string>
+</resources>

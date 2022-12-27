@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.githubapp.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.githubapp.ui.results.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results">
+        <argument
+            android:name="query"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.githubapp.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="repoInfo"
+            app:argType="com.example.githubapp.data.model.GithubRepository" />
+        <action
+            android:id="@+id/action_detailsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.githubapp.ui.webview.WebViewFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview">
+        <argument
+            android:name="repoInfo"
+            app:argType="com.example.githubapp.data.model.GithubRepository" />
+        <argument
+            android:name="pageInfo"
+            app:argType="string" />
+    </fragment>
+</navigation>
